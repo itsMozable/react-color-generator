@@ -11,6 +11,10 @@ export default function App() {
       <h1>Color Generator </h1>
       <div>
         {poopy}
+        {/* Create Box and display code and color */}
+        <div style={{ backgroundColor: poopy }}>
+          <h1>Generated Color: {poopy}</h1>
+        </div>
         {/* Add a Button with on-click-action */}
         <button
           onClick={() => {
@@ -20,10 +24,6 @@ export default function App() {
         >
           Generate
         </button>
-        {/* Create Box and display code and color */}
-        <div style={{ backgroundColor: poopy }}>
-          <h1>Generated Color: {poopy}</h1>
-        </div>
       </div>
     </div>
   );
